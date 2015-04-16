@@ -63,7 +63,7 @@ names(stat_id_list) = cell_ids
 ##############################
 ## script to get spp number etc for each fn500id - could be used to compile location estimates for any statistic
 data = stat_id_list
-fID.summ = data.frame(fnID=as.character(), Species=as.numeric(), Genes=as.numeric(), Species_gene=as.numeric(), stringsAsFactors = FALSE) # make data fram, add new columns as need for stat estimates
+fID.summ = data.frame(fnID=as.character(), Species=as.numeric(), Genes=as.numeric(), Species_gene=as.numeric(), stringsAsFactors = FALSE) # make data frame, add new columns as need for stat estimates
 for (i in 1:length(data)){
   fnid = names(data[i])
   stat = data[[i]]
