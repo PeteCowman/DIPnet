@@ -17,10 +17,10 @@ library(dply)
 
 
 # load stat file of interest from statistics folder
-#load("~//Google Drive//DIPnet_WG4/statistics/By_ESU/fn500id/DIPnet_stats_032415_ABGD_fn500id.Rdata")
-load("DIPnet_stats_ABGD_032315.Rdata")
+load("~//Google Drive//DIPnet_WG4/statistics/By_ESU/fn500id/DIPnet_stats_032415_ABGD_fn500id.Rdata")
+# load("DIPnet_stats_ABGD_032315.Rdata")
 data = divstats
-
+spp = names(data)
 # remove entries wth fewer than 3 populations
 # data = data[data != "Fewer than 3 sampled populations after filtering. No stats calculated"]
 data = data[data != "NULL"]
