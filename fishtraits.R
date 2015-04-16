@@ -41,6 +41,8 @@ syn.table = resolve(query = syn.fish, db = "gnr")
 ## Auxis thazard -> Auxis thazard thazard (subspecies)
 ## Auxis rochei -> Auxis rochei rochei (subspecies)
 ## Himantura tutul -> new species
+## Scomberomorus sp -> no idea what species this is. need to find original paper
+## Acanthurus nigros -> new Hw endemic that has be (re)split from A nigrorois. not in fish base 
 
 #########
 # get info tables
