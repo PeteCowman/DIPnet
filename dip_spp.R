@@ -19,9 +19,13 @@ library(mapproj)
 library(sp)
 # library(rgeos)
 # library(rgdal)
-
+###############################
 `%ni%` <- Negate(`%in%`)
 ###############################
+###############################
+#remove previous variable assignments
+rm(list=ls())
+##############################
 ## load data
 load("DIPnet_stats_032415_ABGD_EEZ_country.Rdata")
 # spp = as.character(names(divstats))
