@@ -26,7 +26,7 @@ library(sp)
 load("DIPnet_stats_032415_ABGD_EEZ_country.Rdata")
 # spp = as.character(names(divstats))
 # write(spp, "DIP_spp.txt")
-dip.spp = read.csv("DIPnetspecies.csv")
+dip.spp = read.csv("DIPnetspecies.csv", header = F)
 dip.spp = as.character(dip.spp[,1])
 dip.spp = gsub(pattern = ".", replacement = " ", fixed = TRUE, dip.spp)
 ### load tree
@@ -48,7 +48,7 @@ length(dip.fish[dip.fish %ni% tree$tip.label])
 
 length(dip.fish[dip.fish %ni% all.fish$Species])
 
-l######################
+######################
 ## Refuge dataset from Pellisier et al Science
 
 refuge = read.delim("refuge.txt", header = TRUE, sep = "\t")
